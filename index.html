@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مطعم أحمد</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md px-4 py-3 flex justify-between items-center">
+    <h1 class="text-xl font-bold text-primary">مطعم أحمد</h1>
+    <button class="text-gray-600">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+        viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round"
+        d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+  </header>
+
+  <!-- عروض اليوم -->
+  <section class="px-4 py-4">
+    <h2 class="text-lg font-semibold mb-2">عروض اليوم</h2>
+    <div class="bg-yellow-100 rounded-lg p-4 shadow flex items-center justify-between">
+      <div>
+        <h3 class="font-bold text-yellow-700">بيتزا عائلية + مشروب مجاناً</h3>
+        <p class="text-sm text-yellow-600">لفترة محدودة فقط!</p>
+      </div>
+      <img src="https://cdn-icons-png.flaticon.com/512/1404/1404945.png" class="w-14 h-14" alt="Pizza">
+    </div>
+  </section>
+
+  <!-- قائمة الطعام -->
+  <section class="px-4 py-2">
+    <h2 class="text-lg font-semibold mb-2">قائمة الطعام</h2>
+    <div class="grid grid-cols-2 gap-4">
+      <!-- عنصر طعام -->
+      <div class="bg-white rounded-lg shadow p-3 flex flex-col items-center">
+        <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png" class="w-16 h-16 mb-2" alt="Burger">
+        <h3 class="font-bold">برغر لحم</h3>
+        <p class="text-sm text-gray-500 mb-2">وجبة لذيذة مع البطاطا</p>
+        <span class="text-primary font-semibold mb-2">5,000 د.ع</span>
+        <button class="bg-primary text-white py-1 px-3 rounded hover:bg-red-600 transition">أضف للسلة</button>
+      </div>
+
+      <!-- عنصر طعام ثاني -->
+      <div class="bg-white rounded-lg shadow p-3 flex flex-col items-center">
+        <img src="https://cdn-icons-png.flaticon.com/512/3595/3595455.png" class="w-16 h-16 mb-2" alt="Sandwich">
+        <h3 class="font-bold">صندويچ دجاج</h3>
+        <p class="text-sm text-gray-500 mb-2">حار أو عادي</p>
+        <span class="text-primary font-semibold mb-2">4,000 د.ع</span>
+        <button class="bg-primary text-white py-1 px-3 rounded hover:bg-red-600 transition">أضف للسلة</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bottom Navbar -->
+  <nav class="fixed bottom-0 left-0 right-0 bg-white border-t shadow-md z-40">
+    <div class="flex justify-around items-center py-2 text-sm text-gray-600">
+      <button class="flex flex-col items-center hover:text-primary transition">
+        <svg class="w-6 h-6 mb-1" fill="none" stroke="currentColor" stroke-width="2"
+          viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round"
+          d="M3 12l2-2m0 0l7-7 7 7M13 5v6h6m-6 0H5m8 0v6m0 0h6m-6 0H5" /></svg>
+        <span>الرئيسية</span>
+      </button>
+
+      <button class="flex flex-col items-center hover:text-primary transition">
+        <svg class="w-6 h-6 mb-1" fill="none" stroke="currentColor" stroke-width="2"
+          viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round"
+          d="M21 21l-4.35-4.35M15.5 10.5a5 5 0 11-10 0 5 5 0 0110 0z" /></svg>
+        <span>بحث</span>
+      </button>
+
+      <button class="flex flex-col items-center hover:text-primary transition relative">
+        <svg class="w-6 h-6 mb-1" fill="none" stroke="currentColor" stroke-width="2"
+          viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round"
+          d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.5 7h11L17 13M7 13h10" /></svg>
+        <span>السلة</span>
+        <span class="absolute top-0 right-2 bg-red-500 text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">2</span>
+      </button>
+
+      <button class="flex flex-col items-center hover:text-primary transition">
+        <svg class="w-6 h-6 mb-1" fill="none" stroke="currentColor" stroke-width="2"
+          viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round"
+          d="M5 13l4 4L19 7" /></svg>
+        <span>المفضلة</span>
+      </button>
+
+      <button class="flex flex-col items-center hover:text-primary transition">
+        <svg class="w-6 h-6 mb-1" fill="none" stroke="currentColor" stroke-width="2"
+          viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round"
+          d="M5.121 17.804A13.937 13.937 0 0112 15c2.485 0 4.78.676 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+        <span>حسابي</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- لون الموقع الأساسي -->
+  <style>
+    .text-primary { color: #e53935; }
+    .bg-primary { background-color: #e53935; }
+  </style>
+
+</body>
+</html>
